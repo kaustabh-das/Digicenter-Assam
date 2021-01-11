@@ -13,8 +13,10 @@
                 var scroll = $(window).scrollTop();   
                 if (scroll >= nav_offset_top ) {
                     $(".main_menu_area").addClass("navbar_fixed");
+                    $(".logo-img img").addClass("navbar_fixed_logo");
                 } else {
                     $(".main_menu_area").removeClass("navbar_fixed");
+                    $(".logo-img img").removeClass("navbar_fixed_logo");
                 }
             });
         };
